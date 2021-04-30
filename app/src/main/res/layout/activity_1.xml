@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        app:layout_editor_absoluteX="0dp"
+        app:layout_editor_absoluteY="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/purple_700">
+
+        <TextView
+            android:id="@+id/setup_Page"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:text="Initial Setup"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/name_Icon_Background"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="#024205"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/name_Head"
+        />
+
+    <TextView
+        android:id="@+id/name_Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P"
+        android:textColor="@color/white"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@+id/name_Icon_Background"
+        app:layout_constraintBottom_toBottomOf="@+id/name_Icon_Background"
+        app:layout_constraintLeft_toLeftOf="@+id/name_Icon_Background"
+        app:layout_constraintTop_toTopOf="@+id/name_Icon_Background" />
+
+    <TextView
+        android:id="@+id/name_Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="300dp"
+        android:text="Your Name"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="80dp"
+        android:text="Name: "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_Head" />
+
+    <EditText
+        android:id="@+id/name_Input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="67dp"
+        android:hint="Prikshit"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name_Head" />
+
+    <TextView
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Profession: "
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/profession_Input"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:hint="Student"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@id/profession"
+        app:layout_constraintTop_toBottomOf="@+id/name_Input" />
+
+    <Button
+        android:id="@+id/save_Details_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="155dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAlignment="center" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

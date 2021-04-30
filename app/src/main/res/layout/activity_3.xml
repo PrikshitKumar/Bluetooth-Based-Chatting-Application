@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_3">
+
+    <LinearLayout
+        android:id="@+id/title_Bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/purple_700" >
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAME"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/User_Status_Server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="15sp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/messages_Layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="65dp"
+        android:background="#31000000">
+
+        <ListView
+            android:id="@+id/Users_Chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stackFromBottom="true"
+            android:layout_marginTop="5dp"
+            android:scrollbarSize="10dp" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/msg_Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type a message"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send_The_Msg"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <Button
+        android:id="@+id/send_The_Msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

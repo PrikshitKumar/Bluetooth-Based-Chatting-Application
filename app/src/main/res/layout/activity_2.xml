@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_2">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/setup_Page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluechat"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/off_Msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout_2"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_For_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/relod_Session"
+        app:layout_constraintTop_toBottomOf="@+id/off_Msg"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/paired_Devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Paired Devices: "
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/devices_List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:smoothScrollbar="true" />
+
+        <TextView
+            android:id="@+id/avail_Devices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:text="Available Devices: "
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/available_Devices_List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:smoothScrollbar="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Listener"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Listener"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/relod_Session"
+        app:layout_constraintBottom_toTopOf="@+id/discoverable_Device"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <Button
+        android:id="@+id/relod_Session"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="RELOAD"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/Listener"
+        app:layout_constraintBottom_toTopOf="@id/discoverable_Device"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/discoverable_Device"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Make Device Discoverable"
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:padding="13dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
