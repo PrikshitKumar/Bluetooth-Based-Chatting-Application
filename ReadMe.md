@@ -3,6 +3,7 @@ As we can chat with anyone on Whatsapp using the Internet. Same way, we can chat
 
 https://user-images.githubusercontent.com/64913497/116663738-27646e00-a9b5-11eb-99ce-f35331489098.mp4
 
+This video contains the working of my android project.
 This video helps you to understand the functionality of this application.
 
 Basically, in First Activity, it is mandatory to fill both the fields **"Name"** as well as **"Profession"**. Otherwise, it forces you to fill both of these fields.
