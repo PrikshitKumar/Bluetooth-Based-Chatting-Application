@@ -1,4 +1,4 @@
-# Bluetooth-Based-Chatting-Android-Application
+# BlueChat: Bluetooth-Based-Chatting-Android-Application
 As we can chat with anyone on Whatsapp using the Internet. Same way, we can chat using this Application as well. But in it, instead of the Internet, Bluetooth is used. And, the range of Bluetooth is approximately 10 Meters. So, we can connect with any device using this app that is within the range of 10 Meters.
 
 https://user-images.githubusercontent.com/64913497/116663738-27646e00-a9b5-11eb-99ce-f35331489098.mp4
